@@ -1,111 +1,268 @@
-.nav-ul{
+/* Reset default padding and margin for UL */
+.nav-ul {
   padding: 0;
   margin: 0;
 }
-.rightnav{
+
+/* Align right for rightnav */
+.rightnav {
   text-align: right;
 }
-.nav-ul li{
-  
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+/* Style for nav links */
+.nav-ul li {
+  font-family: 'Roboto', sans-serif;
   display: inline-block;
   padding: 10px;
-  margin: 0;
-  
-  text-decoration: none ;
+  text-decoration: none;
   background-color: skyblue;
 }
-.divsignup{
-  margin-left: 300px;
-  margin-top: 70px;
-  align-content: center;
-  display: block;
-  width: 254px;
-}
-.inputbox, .searchinputbox{
-  border-color: cyan;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  display: block;
-    margin: 10px;
-    padding: 10px;
-    width: 254px;
-    
-}
-.searchinputbox{
-  margin-left: 630px;
-}
-.invalid_input{
-  margin-left: 20px;
-  display: block;
-  color: red;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: small;
-}
-.button{
-  
-  margin: 10px;
+
+/* Style for login button */
+.login-button button {
+  padding: 10px 20px;
   color: white;
   background-color: black;
-  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.addproduct{
-  border-color: cyan;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  display: block;
-    margin: 10px;
-    padding: 10px;
-    width: 254px;
+
+/* Add some margin between elements */
+.divsignup, .inputbox, .searchinputbox, .inputboxpitch, .invalid_input, .button, .addproduct, .footer, .product-list, .lefttop, .righttop, .leftbottom, .rightbottom, .voteform, .option, .tag, .container, .box, .profile, .profile-title, .form-group, label, input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="file"], .btn-submit, .App-logo, .App-header, .App-link, .content, .left-container, .right-container, h1, header, nav, .dashboard, .dashboard a, .content, .container, .box, .box a, .official, .festive, .functions, .others {
+  margin: 10px;
 }
-.footer{
+
+/* Add some padding to input boxes */
+.inputbox, .searchinputbox, .inputboxpitch, input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="file"] {
+  padding: 10px;
+}
+
+/* Style for buttons */
+.btn, .btn.paid, .btn:hover {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for footer */
+.footer {
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
   background-color: skyblue;
+  padding: 20px; /* Add padding for better spacing */
 }
-.product-list{
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
-  text-align: center;
-  margin-top: 50px  ;
+/* Improve readability and spacing for paragraphs and lists */
+p, ul, ol {
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.5; /* Improve line spacing */
+  margin-bottom: 10px; /* Add spacing between paragraphs and lists */
 }
-.product-list ul li{
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  display: inline-block;
+
+/* Style for links */
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.randomabc{
+  
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  width: 170px;
-  border: 2px solid black;
-  margin-bottom: -70px;
+  background-color: #ffffff78;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.event-date {
+  font-weight: bold;
+}
+
+.event-name {
+  margin-left: 10px;
+}
+
+/* .pdf-icon {
+  margin-left: auto;
+  margin-inline-start: 15;
+
+} */
+
+.pdf-link {
+  display: block;
+}
+
+.pdf-link img {
+  width: 40px;
+  height: 40px;
+  margin-left: 100vh;
+  vertical-align: middle;
+}
+
+.pdf-link:hover img {
+  filter: brightness(0) invert(1);
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff78;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.event-date {
+  font-weight: bold;
+}
+
+.event-name {
+  margin-left: 10px;
+}
+
+/* .pdf-icon {
+  margin-left: auto;
+  margin-inline-start: 15;
+
+} */
+
+.pdf-link {
+  display: block;
+}
+
+.pdf-link img {
+  width: 40px;
+  height: 40px;
+  margin-left: 100vh;
+  vertical-align: middle;
+}
+
+.pdf-link:hover img {
+  filter: brightness(0) invert(1);
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background-image: url('img4.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fix the background image */
+}
+
+.form-content {
+  background: rgba(255, 255, 255, 0.8); /* Adding transparency to the form content for better readability */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #0056b3;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #003d82;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-toggle a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.form-toggle a:hover {
+  text-decoration: underline;
 }

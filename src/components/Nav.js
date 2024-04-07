@@ -12,14 +12,31 @@ const Nav=()=>{
         <div >
             {auth
                 ? <ul className="nav-ul">
-                <li><Link to="/products">Products</Link></li>
-                <li><Link to="/add-product">Add Product</Link></li>
+                <li><Link to="/events">Events</Link></li>
+                <li><Link to="/payment">Payments</Link></li>
+                
+                <li><Link to="/votetocand">Vote To Candidate</Link></li>
+                <li><Link to="/voteascand">Register As Candidate</Link></li>
+                <li><Link to="/ticket">Complaint</Link></li>
+                <li><Link to="/profile">Profile</Link></li>
                 <li> <Link onClick={logout} to="/login">Logout ({JSON.parse(auth).name})</Link></li>
                 </ul>
-                : <ul className="nav-ul rightnav">
+
+                :
+                <div>
+                   
+                
+                
+           
+                 <ul className="nav-ul rightnav">
+                    
+                 <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/amenties">Amenities</Link></li>
+                    <li><Link to="/rules">Rules</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="/login">Login</Link> </li>
                 <li><Link to="/register">SignUp</Link></li>
-                </ul>
+                </ul></div>
             }
         </div>
     )

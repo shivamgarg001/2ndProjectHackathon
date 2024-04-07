@@ -9,7 +9,7 @@ const Login=()=>{
     useEffect(()=>{
         const auth=localStorage.getItem('user');
         if(auth){
-            navigate('/')
+            navigate('/events')
         }
     })
     const checkData=async()=>{
@@ -26,7 +26,7 @@ const Login=()=>{
         console.warn(result);
         localStorage.setItem("user",JSON.stringify(result));
         if(result.name){
-            navigate('/')
+            navigate('/events')
         }
         else{
             localStorage.clear()
@@ -35,14 +35,19 @@ const Login=()=>{
     }
 
     return(
-        <div className="div_signup">
-            <h1 >Login</h1>
-            <input className="inputbox" type="text"
-            value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter EMAIL"/>
-            <input className="inputbox" type="password" 
-            value={password} onChange={(e)=>setPassword(e.target.value)}placeholder="Enter Password"/>
-            <button className="button" onClick={checkData}>SUBMIT</button>
+
+        <div class="form-container" id="formContainer">
+    <form id="loginForm" class="form-content">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" id="loginEmail" placeholder="Email Address" required/>
         </div>
+        <div class="input-group">
+            <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" id="loginPassword" placeholder="Password" required/>
+        </div>
+        <button onClick={checkData} type="submit" class="btn">Login</button>
+        {/* <p class="form-toggle">Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p> */}
+    </form></div>
     )
 }
 
